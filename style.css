@@ -1,0 +1,128 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-image: url("tim-mossholder-07uiqD9LS6U-unsplash.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+#container{
+    margin-top: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.116);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 1px solid #1c4b2f;
+    border-radius: 25px;
+}
+
+#container:hover{
+    box-shadow: 0px 0px 20px #97ffc0;
+}
+
+#title{
+    text-shadow: 0px 0px 7px #ffffff;
+}
+
+#container2{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#num{
+    font-size: 180px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#title{
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.btns{
+    font-size: 20px;
+    background-color: #232323;
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    transition: .2s;
+    box-shadow: 0px 3px 5px #000000;
+
+}
+
+.btns:hover{
+    background-color: #1c4b2f;
+    color: #97ffc0;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #97ffc0;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323;
+    color: white;
+    text-align: right;
+ }
+
+ a{
+     color: white;
+ }
+
+
+ @media(max-width: 500px){
+     #container{
+         width: 100%;
+         margin-top: 50px;
+     }
+     #container2 {
+        flex-flow: row-reverse wrap-reverse;
+      }
+      .btns{
+          margin: 10px;
+      }
+ }
+
+
+ @media(min-width: 500px){
+    #container{
+        width: 80%;
+        margin-top: 80px;
+    }
+    #container2{
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 800px){
+    #container{
+        width: 65%;
+        margin-top: 150px;
+    }
+}
+
+@media(min-width: 1200px){
+    #container{
+        width: 40%;
+    }
+}
+
